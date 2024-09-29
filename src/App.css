@@ -1,0 +1,204 @@
+body {
+  background-color: #ffffff; /* เปลี่ยนสีพื้นหลัง */
+  color: #333; /* เปลี่ยนสีข้อความหลัก */
+}
+
+.product-title {
+  color: #ffffff; /* สีของชื่อสินค้า */
+  font-weight: bold; /* ตัวหนา */
+}
+
+/* สไตล์อื่น ๆ */
+.search-bar input {
+  color: #fffbfb; /* สีข้อความในช่องค้นหา */
+}
+
+.cart {
+  background-color: #fff; /* สีพื้นหลังของตะกร้า */
+}
+
+
+.header-title {
+  text-align: center;  /* จัดให้อยู่ตรงกลาง */
+  font-size: 2rem;  /* ขนาดตัวอักษรใหญ่ */
+  color: #ff0404;  /* เปลี่ยนสีข้อความ */
+  font-weight: bold;  /* ทำให้ข้อความหนา */
+  margin-top: 20px;  /* เพิ่มระยะห่างด้านบน */
+  margin-bottom: 30px;  /* เพิ่มระยะห่างด้านล่าง */
+  text-transform: uppercase;  /* เปลี่ยนเป็นตัวพิมพ์ใหญ่ทั้งหมด */
+  letter-spacing: 2px;  /* เพิ่มช่องว่างระหว่างตัวอักษร */
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* กำหนด 5 คอลัมน์ตลอด */
+  gap: 20px;
+  padding: 20px;
+}
+
+
+
+.product-card {
+  background-color: #fff; /* สีพื้นหลังของการ์ดสินค้า */
+  border: 1px solid #ccc; /* กรอบของการ์ด */
+  border-radius: 8px; /* มุมโค้ง */
+  padding: 100px; /* ระยะห่างภายในการ์ด */
+  text-align: center; /* จัดข้อความกลาง */
+}
+
+
+.cart {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: flex-end; /* จัดเนื้อหาให้ชิดขอบขวา */
+  margin: 30px 0;
+  background-color: #f00505; /* สีพื้นหลังของแถบค้นหา */
+  padding: 10px;
+  border-radius: 10px;
+  width: 109%; /* ทำให้ยาวเต็มที่ */
+  box-sizing: border-box; /* ให้ padding อยู่ภายในความกว้าง */
+}
+
+.search-input {
+  width: 10%; /* ปรับให้กว้างเต็มที่ */
+  padding: 10px; /* ขนาดของพื้นที่ค้นหา */
+  border: none; /* ไม่ต้องการกรอบ */
+  border-radius: 5px; /* รัศมีมุมของที่ค้นหา */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* เงาที่นุ่มนวล */
+  background-color: white; /* สีพื้นหลังของที่ค้นหา */
+  color: black; /* สีของตัวหนังสือ */
+  font-size: 16px; /* ขนาดตัวอักษร */
+}
+.search-icon {
+  position: absolute; /* ตำแหน่งคงที่ */
+  right: 10px; /* ระยะห่างจากขอบขวา */
+  top: 50%; /* ให้อยู่กลางในแนวตั้ง */
+  transform: translateY(-50%); /* ปรับให้กลางในแนวตั้ง */
+  color: gray; /* สีของไอคอน */
+  cursor: pointer; /* แสดงรูปมือเมื่อชี้ไปที่ไอคอน */
+}
+
+
+.search-bar input::placeholder {
+  color: #888; /* สีข้อความใน placeholder */
+}
+
+.search-bar input:focus {
+  border-color: #fffbfb; /* เปลี่ยนสีกรอบเมื่อเลือกช่องค้นหา */
+  outline: none;
+}
+
+.product-title {
+  color: #000000; /* เปลี่ยนเป็นสีที่ต้องการ */
+  font-weight: bold; /* เปลี่ยนรูปแบบฟอนต์ ถ้าต้องการ */
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* จัดให้กลางในแนวตั้ง */
+  text-align: center; /* จัดให้กลางในแนวนอน */
+  border: 1px solid #ddd; /* เพิ่มกรอบ */
+  border-radius: 8px; /* มุมมน */
+  padding: 10px; /* เพิ่ม padding */
+  margin: 10px; /* เพิ่ม margin */
+  max-width: 200px; /* จำกัดความกว้างของการ์ด */
+}
+
+.product-card img {
+  max-width: 100%; /* ให้รูปภาพไม่เกินขนาดการ์ด */
+  height: auto; /* คงสัดส่วนภาพ */
+}
+
+
+.product-card button {
+  margin-top: 5px;
+  background-color: #28a745;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+  background-color: #218838;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+ul li img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.cart {
+  width: 80%; /* หรือปรับให้เหมาะสมตามต้องการ */
+  max-width: 600px; /* กำหนดความกว้างสูงสุด */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.cart ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart li img {
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.cart li button {
+  padding: 5px 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart li button:hover {
+  background-color: #ff1a1a;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center; /* จัดข้อความส่วนหัวให้อยู่ตรงกลาง */
+}
